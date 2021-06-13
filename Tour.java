@@ -114,10 +114,11 @@ public class Tour{
         System.out.println("\nMCTS Simulation\nTour\nTour Cost: "+getTourCost());
         for(int i=0;i<tourRoutes.getSize();i++){
             System.out.println("Vehicle "+tourRoutes.get(i).vehicle.getVehicleID());
-            if(tourRoutes.get(i).getSize() != 2){
-                System.out.println(tourRoutes.get(i).printRoute());
-            }
+            System.out.println("Vehicle "+tourRoutes.get(i).vehicle.getVehicleID());
+            System.out.println(tourRoutes.get(i).printRoute());
             System.out.println("Capacity: "+tourRoutes.get(i).vehicle.getSize());
+            System.out.println("Cost: "+tourRoutes.get(i).getRouteCost());
+            System.out.println("");
         }
         System.out.println("** Time elapsed: " + m.getElapsed() + " seconds **");
     }
