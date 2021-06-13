@@ -16,7 +16,7 @@ public class Greedy {
     MyLinkedList<Customer>check = new MyLinkedList();
     //initialize new_tour with first route with first stop at 0
     new_tour= new Tour(vehicleCapacity);
-    new_tour.newRouteMCTS();
+    new_tour.newRoute();
     while(true){
             //declare possible_successors
         MyLinkedList<Customer>possible_successors=new MyLinkedList();
@@ -38,7 +38,7 @@ public class Greedy {
                     break;//rollout process is done
                 }
                 //System.out.println("New Route");
-                new_tour.newRouteMCTS();//else add new vehicle, again start at depot with ID 0
+                new_tour.newRoute();//else add new vehicle, again start at depot with ID 0
                 check.clear();//uncheck all unvisited customer for new route
                 //skip to next loop to continue search a route for new vehicle
                 continue;

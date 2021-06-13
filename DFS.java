@@ -27,7 +27,7 @@ public class DFS {
         MyLinkedList<Customer>check = new MyLinkedList();
         //initialize new_tour with first route with first stop at 0
         new_tour= new Tour(vehicleCapacity);
-        new_tour.newRouteMCTS();
+        new_tour.newRoute();
         while(true){
             progress++;
             if(progress % 500000 == 0){
@@ -55,7 +55,7 @@ public class DFS {
                     return new_tour;//rollout process is done
                 }
                 //System.out.println("New Route");
-                new_tour.newRouteMCTS();//else add new vehicle, again start at depot with ID 0
+                new_tour.newRoute();//else add new vehicle, again start at depot with ID 0
                 check.clear();//uncheck all unvisited customer for new route
                 //skip to next loop to continue search a route for new vehicle
                 continue;
@@ -78,7 +78,7 @@ public class DFS {
                     return new_tour;//rollout process is done
                 }
                 //System.out.println("New Route");
-                new_tour.newRouteMCTS();//else add new vehicle, again start at depot with ID 0
+                new_tour.newRoute();//else add new vehicle, again start at depot with ID 0
                 check.clear();//uncheck all unvisited customer for new route
                 //skip to next loop to continue search a route for new vehicle
                 Instant end = Instant.now();

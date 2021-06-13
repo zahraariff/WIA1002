@@ -33,7 +33,7 @@ public class Tour{
     
     
         //create a tour route list when tour object is created
-    public void newRouteMCTS(){
+    public void newRoute(){
         //Increment vehicleID everytime a new vehicle is used for a new route
         vehicleID++;
         //Declare a new route and assign a new vehicle as a parameter
