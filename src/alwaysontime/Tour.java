@@ -1,10 +1,5 @@
 package alwaysontime;
 
-/**
- *
- * @author adina
- */
-
 public class Tour{
     MyLinkedList<RouteGraph<Customer, Double>> tourRoutes; //Linked list of routes in a tour
     public static MyLinkedList<Customer> allCustomer = new MyLinkedList<>(); // Linked List for all custome

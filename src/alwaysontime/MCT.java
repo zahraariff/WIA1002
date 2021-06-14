@@ -3,10 +3,7 @@ package alwaysontime;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Random;
-/**
- *
- * @author adina
- */
+
 public class MCT{
     int rollout=0;
     Tour new_tour;

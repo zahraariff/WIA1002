@@ -1,9 +1,5 @@
 package alwaysontime;
 
-/**
- *
- * @author adina
- */
 public class MyLinkedList<E> {
     private int size;
     Node<E> head;

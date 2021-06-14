@@ -1,20 +1,7 @@
 package alwaysontime;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import java.util.ArrayList;
 
-/**
- *
- * @author adina
- * @param <V>
- * @param <E>
- */
 public class RouteGraph <V extends Comparable <V>, E extends Comparable<E>>{
     Vertex<V,E>head;
     Vertex<V,E>tail;

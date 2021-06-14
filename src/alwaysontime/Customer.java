@@ -1,10 +1,5 @@
 package alwaysontime;
 
-/**
- *
- * @author adina
- */
-
 //Each customer represents a location
 public class Customer implements Comparable<Customer>{
     int demand,ID;

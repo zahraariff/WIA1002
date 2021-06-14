@@ -1,9 +1,5 @@
 package alwaysontime;
 
-/**
- *
- * @author adina
- */
 public class Vehicle{
     private final int capacity;//for max capacity of all vehicles
     private int size;//current capacity of the vehicle
